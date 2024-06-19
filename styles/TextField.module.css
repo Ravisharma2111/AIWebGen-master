@@ -1,0 +1,24 @@
+.textField {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  width: 100%; /* Adjust for full width of the container */
+  height: 100%; /* Adjust for full height of the container */
+  border-radius: 5px;
+  padding: 10px;
+  animation: pulse 10s infinite;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@keyframes pulse {
+  0% {
+    border-color: white;
+  }
+  50% {
+    border-color: rgb(107, 31, 143);
+  }
+  100% {
+    border-color: rgb(148, 29, 148);
+  }
+}

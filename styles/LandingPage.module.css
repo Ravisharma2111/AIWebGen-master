@@ -1,0 +1,73 @@
+.container {
+  background: linear-gradient(-45deg, #000000, #17011f, #072a33, #160410, #2b0333);
+  background-size: 400% 400%;
+  animation: gradient  10s ease infinite;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.header {
+  font-size: 5em;
+  font-weight: 700;
+  width: 60%;
+  line-height: 1em;
+  text-align: center;
+  margin-bottom: 100px; 
+  color: white; 
+  text-shadow:  0 0 10px #7e1488;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.fadeOutUp {
+  animation: fadeOutUp 1s ease forwards;
+}
+
+
+.textFieldContainer {
+  position: relative;
+  width: 750px; /* Adjust as needed */
+  height: 50px; /* Adjust as needed */
+  margin-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textFieldContainer:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 999px; /* This may need adjustment */
+  height: 999px; /* This may need adjustment */
+  background: conic-gradient(from -45deg, transparent, #4be8cb, #582eff, transparent 25%);
+  animation: rotate 6s linear infinite;
+  z-index: -1;
+}
+
+@keyframes rotate {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
